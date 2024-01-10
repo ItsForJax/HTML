@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+
+    <a href="https://www.google.com" target="_blank">
+        <button style=  "background-color: aquamarine;
+                        border-radius: 5px;">
+            Google
+        </button>
+    </a>
+    
+    <br>
+    <br>
+
+    <button id = "btn" style=  "background-color: aquamarine;
+                    border-radius: 5px;">
+        With Javascript
+    </button>
+    
+    <p id="p">
+
+    </p>
+
+    <script>
+        document.getElementById("btn").onclick = function() {
+            let text = window.prompt("Enter Message");
+            document.getElementById("p").textContent= text.toUpperCase();
+        }
+    </script>
+
+</body>
+</html>
